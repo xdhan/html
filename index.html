@@ -8,21 +8,53 @@
     <title>Plus One Advisory</title>
     <link rel="stylesheet" href="css/semantic.min.css">
 </head>
-
+<style></style> 
 <body>
-    <div class="ui two column centered grid">
-        <div class="column">
-            <img src="images/logo.jpg">
-        </div>
-        <div class="four column centered row">
-            <div class="column">1</div>
-            <div class="column">2</div>
+    <div class="ui center aligned basic segment">
+        <img src="images/logo.jpg" width="300px">
+    </div>
+    <div style="padding:20px;">
+        <div class="ui horizontal segments" style="box-shadow:none;border:none;">
+            <div class="ui right aligned segment" style="border:none;">
+                <div class="ui horizontal list">
+                    <div class="item">
+                        <div class="ui small image">
+                            <img src="images/Malaysia.png">
+                        </div>
+                        <div class="content">
+                            <div class="description">
+                                <a href="china.html">中文</a>
+                                <br>
+                                <br>
+                                <a href="china.html">English</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="ui tiny basic button" onclick="go();" style="margin:15px 85px;">Malaysia</div>
+            </div>
+            <div class="ui center aligned segment" style="border:none;">
+                <div>
+                    <img src="images/Australia.png">
+                </div>
+                <div class="ui tiny basic button" onclick="go();" style="margin:20px 30px;">Australia</div>
+            </div>
+            <div class="ui left aligned segment" style="border:none;">
+                <div>
+                    <img src="images/china.png">
+                </div>
+                <div class="ui tiny basic button" onclick="go();" style="margin:15px 30px;">中国</div>
+            </div>
         </div>
     </div>
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/semantic.min.js"></script>
 <script>
-	
+	function go() {
+		window.location.href = "china.html";
+	}
 </script>
+
 </html>
